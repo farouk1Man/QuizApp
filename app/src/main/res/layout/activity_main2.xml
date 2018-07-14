@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/redTextBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#ff4081"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/ques_header_dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quest_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redTextBar2"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <!--View for the Questions And Options-->
+        <TextView
+            android:id="@+id/quest_dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="@string/quest_1"
+            />
+
+        <!--View for the Options-->
+        <LinearLayout
+            android:id="@+id/options_pane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--An ImageView to contain an image-->
+    <ImageView
+        android:id="@+id/img_pane"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/quest_cp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+
+        <!--Layout for Next and Prev Buttons-->
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/prev_btn_lb"
+            android:layout_margin="10dp"
+            android:onClick="previousButtonClicked"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/next_btn_lb"
+            android:layout_margin="10dp"
+            android:onClick="nextButtonClicked"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

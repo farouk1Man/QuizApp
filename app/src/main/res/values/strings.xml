@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">The BIG Quiz</string>
+    <string name="instruction_header_txt">Instructions</string>
+    <string name="instruction_txt">
+        1.  All options must be correct in a question requiring more than one answer\n
+        \n2.  Questions can only be submitted after reaching the last question\n
+        \n3.  Cycle through the questions by using the \"Next\" and \"Previous\" buttons\n
+        \n4.  Questions that require a text input should be answered in Uppercase or Lowercase\n
+        \n5.  A single space must be left after each word for questions requirinq meaning of abbrevations\n
+</string>
+    <string name="start_btn_lb">Start</string>
+
+    <string name="prev_btn_lb">Previous</string>
+    <string name="next_btn_lb">Next</string>
+
+    <string name="quest_1">The Android operating system is known as a distribution of which operating system</string>
+    <string name="quest_2">Which of the following are related to the internet technology(pick three)</string>
+    <string name="quest_3">What is the name of the device shown in the picture below</string>
+    <string name="quest_4">What is the full meaning of LAN in IT terminology</string>
+    <string name="quest_5">What is the full meaning of ISP in IT terminology</string>
+
+
+
+
+
+
+</resources>
